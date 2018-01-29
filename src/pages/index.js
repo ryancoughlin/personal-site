@@ -1,10 +1,17 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
 import glamorous from 'glamorous'
 import Styles from '../common/styles/'
 
 const Home = () => (
   <Container>
+    <Helmet
+      title="Ryan Coughlin - Mainer, Designer an Fly Fishing Junkie"
+      meta={[
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ]}
+    />
     <ContentContainer>
       <TinyHeadline>
         ryan coughlin
@@ -16,7 +23,7 @@ const Home = () => (
       <IntroHeadline>What makes a great digital product?</IntroHeadline>
 
       <Body>
-        I’ve been working at that for the last 10 years. And I’ve found that all
+        I’ve been working at that for the last 10 years. And I've found that all
         great products have one thing in common:
       </Body>
 
@@ -71,14 +78,20 @@ const Home = () => (
   </Container>
 )
 
+const mediaQueries = {
+  phone: '@media only screen and (max-width: 640px)'
+}
+
 const Container = glamorous.div({
   borderTop: '8px solid #ffd14e',
   paddingTop: 80
 })
 
 const ContentContainer = glamorous.div({
-  width: 640,
-  margin: '0 auto'
+  maxWidth: 640,
+  width: '100%',
+  margin: '0 auto',
+  padding: '0 16px'
 })
 
 const IntroHeadline = glamorous.h1({
@@ -86,7 +99,10 @@ const IntroHeadline = glamorous.h1({
   fontSize: 66,
   textTransform: 'uppercase',
   color: '#36082d',
-  lineHeight: '1.1'
+  lineHeight: '1.1',
+  [mediaQueries.phone]: {
+    fontSize: 37
+  }
 })
 
 const SecondaryHeadline = glamorous.h2({
@@ -94,7 +110,10 @@ const SecondaryHeadline = glamorous.h2({
   marginTop: 23,
   fontFamily: '"Oswald", sans-serif',
   textTransform: 'uppercase',
-  color: '#36082d'
+  color: '#36082d',
+  [mediaQueries.phone]: {
+    fontSize: 22
+  }
 })
 
 const TinyHeadline = glamorous.h5({
@@ -111,7 +130,10 @@ const HighlightText = glamorous.span({
   textTransform: 'uppercase',
   padding: '4px 6px 2px 6px',
   marginLeft: 4,
-  color: '#36082d'
+  color: '#36082d',
+  [mediaQueries.phone]: {
+    fontSize: 18
+  }
 })
 
 const Body = glamorous.p({
@@ -119,7 +141,11 @@ const Body = glamorous.p({
   fontSize: 24,
   color: '#36082d',
   lineHeight: 1.5,
-  marginBottom: 40
+  marginBottom: 40,
+  [mediaQueries.phone]: {
+    fontSize: 20,
+    marginBottom: 24
+  }
 })
 
 const Blockquote = glamorous.blockquote({
@@ -131,7 +157,10 @@ const Blockquote = glamorous.blockquote({
   fontStyle: 'italic',
   lineHeight: 1.5,
   color: '#36082d',
-  marginBottom: 40
+  marginBottom: 40,
+  [mediaQueries.phone]: {
+    fontSize: 20
+  }
 })
 
 const SubtleText = glamorous.span({
