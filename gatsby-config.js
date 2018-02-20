@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`oswald\:700`, `arapey\:400`]
+        fonts: [`oswald\:700`, `arapey\:400`, `lora\:400`]
       }
     }
   ]

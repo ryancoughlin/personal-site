@@ -23,33 +23,17 @@ const Home = () => (
       <IntroHeadline>What makes a great digital product?</IntroHeadline>
 
       <Body>
-        I’ve been working at that for the last 10 years. And I've found that all
-        great products have one thing in common:
+        I’ve been working at that for the last 10 years. And I&apos;ve found
+        that all great products have one thing in common:
       </Body>
 
       <Blockquote>
-        They were created by talented and hard-working teams. Each person
-        involved knew the product had a specific goal and problem to it thrived
-        to solve. From function, to user flow, to visual design and everything
-        in between, each element was carefully fashioned to accomplish it's
-        goals.
+        They were created by a talented and hardworking team. Each team member
+        knew the product had a specific problem it was trying to solve. From
+        defining that problem with a design sprint, developing a user journey,
+        and ironing out information architecture with wireframes, each element
+        was carefully fashioned to accomplish that goal.
       </Blockquote>
-
-      <SecondaryHeadline>
-        Hi, my name is Ryan Coughlin, and I’m a designer at
-        <a href="http://thoughtbot.com" className="thoughtbot-link">
-          thoughtbot
-        </a>. I figure out creative ways to make practical, fun, and innovative
-        products.
-      </SecondaryHeadline>
-
-      <Body>
-        If you’d like to see examples of my previous work, check out my
-        portfolio on{' '}
-        <a href="http://dribbble.com/ryancoughlin" className="dribbble-link">
-          Dribbble
-        </a>.
-      </Body>
 
       <Body>
         I’ve worked with teams designing awesome apps for the last XX years. And
@@ -61,6 +45,70 @@ const Home = () => (
         </HighlightText>
       </Body>
 
+      <SecondaryHeadline>
+        Hi, my name is Ryan Coughlin, and I’m a designer at&nbsp;<RobinLink href="http://robinpowered.com">
+          robin
+        </RobinLink>. I figure out creative ways to make practical and
+        innovative products.
+      </SecondaryHeadline>
+
+      <Body>
+        If you’d like to see examples of my previous work, check out my
+        portfolio on{' '}
+        <a href="http://dribbble.com/ryancoughlin" className="dribbble-link">
+          Dribbble
+        </a>.
+      </Body>
+    </ContentContainer>
+    <LoudContainer>
+      <ContentContainer>
+        <SecondaryHeadline textColor={'#b798b1'}>
+          Currently, I am building products at Robin.
+        </SecondaryHeadline>
+
+        <Body textColor={'#b798b1'}>
+          After years of immersing myself within product teams consulting at
+          <span>thoughtbot</span> and <span>MojoTech</span>
+        </Body>
+
+        <Body textColor={'#b798b1'}>
+          <HighlightText backgroundColor={'#b798b1'}>
+            I missed the ability focus and practice my craft on a single
+            platform.
+          </HighlightText>
+        </Body>
+
+        <Body textColor={'#b798b1'}>My day to day consists of</Body>
+
+        <ul>
+          <ListItem textColor={'#b798b1'}>
+            Working closely with my design team ensuring initiatives are being
+            created and brought to market.
+          </ListItem>
+          <ListItem textColor={'#b798b1'}>
+            Creating organization across visual directions to create design
+            consistency across each product in the platform.
+          </ListItem>
+          <ListItem textColor={'#b798b1'}>
+            Create communication channels with product managers to ensure
+            designs are hitting quarterly goals, validated solving problems and
+            prioritizing the right tasks.
+          </ListItem>
+          <ListItem textColor={'#b798b1'}>
+            Facilitating design sprints with designers, developers and product
+            managers -- Build the right thing, at the right time.
+          </ListItem>
+          <ListItem textColor={'#b798b1'}>
+            Mentoring the design team to help effectively convey the goal of
+            their design and what problem it is trying to solve, addressing
+            pushback from product, prioritizing daily and quarterly tasks, and
+            overall design process.
+          </ListItem>
+        </ul>
+      </ContentContainer>
+    </LoudContainer>
+
+    <ContentContainer>
       <Body>
         I’ve learned something as a designer that means the difference between a
         team collaborating smoothly and creating an awesome app or not… and that
@@ -94,6 +142,13 @@ const ContentContainer = glamorous.div({
   padding: '0 16px'
 })
 
+const LoudContainer = glamorous.div({
+  backgroundColor: '#36082d',
+  paddingTop: 60,
+  paddingBottom: 60,
+  marginBottom: 60
+})
+
 const IntroHeadline = glamorous.h1({
   fontFamily: '"Oswald", sans-serif',
   fontSize: 66,
@@ -105,16 +160,22 @@ const IntroHeadline = glamorous.h1({
   }
 })
 
-const SecondaryHeadline = glamorous.h2({
-  fontSize: 26,
-  marginTop: 23,
-  fontFamily: '"Oswald", sans-serif',
-  textTransform: 'uppercase',
-  color: '#36082d',
-  [mediaQueries.phone]: {
-    fontSize: 22
-  }
-})
+const SecondaryHeadline = glamorous.h2(
+  {
+    fontSize: 26,
+    marginTop: 23,
+    fontFamily: '"Oswald", sans-serif',
+    textTransform: 'uppercase',
+    color: '#36082d',
+    letterSpacing: '0.017em',
+    [mediaQueries.phone]: {
+      fontSize: 22
+    }
+  },
+  ({ textColor }) => ({
+    color: textColor
+  })
+)
 
 const TinyHeadline = glamorous.h5({
   fontSize: 11,
@@ -123,41 +184,67 @@ const TinyHeadline = glamorous.h5({
   letterSpacing: '0.06em'
 })
 
-const HighlightText = glamorous.span({
-  fontSize: 22,
-  fontFamily: '"Oswald", sans-serif',
-  backgroundColor: '#ffd14e',
-  textTransform: 'uppercase',
-  padding: '4px 6px 2px 6px',
-  marginLeft: 4,
-  color: '#36082d',
-  [mediaQueries.phone]: {
-    fontSize: 18
-  }
-})
-
-const Body = glamorous.p({
-  fontFamily: 'Arapey',
-  fontSize: 24,
-  color: '#36082d',
-  lineHeight: 1.5,
-  marginBottom: 40,
-  [mediaQueries.phone]: {
+const HighlightText = glamorous.span(
+  {
     fontSize: 20,
+    fontFamily: '"Oswald", sans-serif',
+    backgroundColor: '#ffd14e',
+    textTransform: 'uppercase',
+    padding: '4px 6px 2px 6px',
+    marginLeft: 4,
+    color: '#36082d',
+    letterSpacing: '0.017em',
+    [mediaQueries.phone]: {
+      fontSize: 18
+    }
+  },
+  ({ textColor, backgroundColor }) => ({
+    backgroundColor: backgroundColor,
+    color: textColor
+  })
+)
+
+const Body = glamorous.p(
+  {
+    fontFamily: 'Lora',
+    fontSize: 18,
+    color: '#36082d',
+    lineHeight: 1.64,
+    marginBottom: 40,
+    [mediaQueries.phone]: {
+      fontSize: 20,
+      marginBottom: 22
+    }
+  },
+  ({ textColor }) => ({
+    color: textColor
+  })
+)
+
+const ListItem = glamorous.li(
+  {
+    fontFamily: 'Lora',
+    fontSize: 18,
+    color: '#36082d',
+    lineHeight: 1.64,
     marginBottom: 24
-  }
-})
+  },
+  ({ textColor }) => ({
+    color: textColor
+  })
+)
 
 const Blockquote = glamorous.blockquote({
   margin: 0,
-  borderLeft: '4px solid #ffd14e',
-  paddingLeft: 24,
-  fontSize: 24,
-  fontFamily: 'Arapey',
+  borderLeft: '6px solid #ffd14e',
+  paddingLeft: 22,
+  fontSize: 18,
+  fontFamily: 'Lora',
   fontStyle: 'italic',
-  lineHeight: 1.5,
+  lineHeight: 1.64,
   color: '#36082d',
   marginBottom: 40,
+  marginLeft: '-28px',
   [mediaQueries.phone]: {
     fontSize: 20
   }
@@ -165,6 +252,10 @@ const Blockquote = glamorous.blockquote({
 
 const SubtleText = glamorous.span({
   color: '#999'
+})
+
+const RobinLink = glamorous.a({
+  color: '#ec3948'
 })
 
 export default Home
