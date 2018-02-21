@@ -35,50 +35,40 @@ const Home = () => (
         was carefully fashioned to accomplish that goal.
       </Blockquote>
 
-      <Body>
-        I’ve worked with teams designing awesome apps for the last XX years. And
-        I’ve noticed that our best apps were those that we put the finishing
-        polish into.
-        <HighlightText>
-          It’s often the last 20% of a products refinement takes it from good to
-          great.
-        </HighlightText>
-      </Body>
-
-      <SecondaryHeadline>
-        Hi, my name is Ryan Coughlin, and I’m a designer at&nbsp;<RobinLink href="http://robinpowered.com">
+      <SupportingHeadline>
+        Hi, my name is Ryan Coughlin, and I’m a designer at&nbsp;<TextLink
+          textColor={'#ec3948'}
+          href="http://robinpowered.com"
+        >
           robin
-        </RobinLink>. I figure out creative ways to make practical and
-        innovative products.
-      </SecondaryHeadline>
+        </TextLink>. I figure out creative ways to make practical and innovative
+        products.
+      </SupportingHeadline>
 
       <Body>
         If you’d like to see examples of my previous work, check out my
         portfolio on{' '}
-        <a href="http://dribbble.com/ryancoughlin" className="dribbble-link">
+        <TextLink href="http://dribbble.com/ryancoughlin" textColor={'#ea4c89'}>
           Dribbble
-        </a>.
+        </TextLink>.
       </Body>
     </ContentContainer>
     <LoudContainer>
       <ContentContainer>
-        <SecondaryHeadline textColor={'#b798b1'}>
-          Currently, I am building products at Robin.
-        </SecondaryHeadline>
+        <SectionHeadline textColor={'#b798b1'}>
+          Currently, I am building conference room scheduling products.
+        </SectionHeadline>
 
         <Body textColor={'#b798b1'}>
           After years of immersing myself within product teams consulting at
-          <span>thoughtbot</span> and <span>MojoTech</span>
-        </Body>
-
-        <Body textColor={'#b798b1'}>
-          <HighlightText backgroundColor={'#b798b1'}>
+          <span>thoughtbot</span> and <span>MojoTech</span>.{' '}
+          <em>
             I missed the ability focus and practice my craft on a single
             platform.
-          </HighlightText>
+          </em>
         </Body>
 
-        <Body textColor={'#b798b1'}>My day to day consists of</Body>
+        <Body textColor={'#b798b1'}>My day to day consists of:</Body>
 
         <ul>
           <ListItem textColor={'#b798b1'}>
@@ -96,7 +86,7 @@ const Home = () => (
           </ListItem>
           <ListItem textColor={'#b798b1'}>
             Facilitating design sprints with designers, developers and product
-            managers -- Build the right thing, at the right time.
+            managers &mdash; <em>Build the right thing, at the right time.</em>
           </ListItem>
           <ListItem textColor={'#b798b1'}>
             Mentoring the design team to help effectively convey the goal of
@@ -115,6 +105,16 @@ const Home = () => (
         is passion. When every member of your team is passionate about
         contributing their expertise to the success of an app, the end result is
         a much better product.
+      </Body>
+
+      <Body>
+        I’ve worked with teams designing awesome apps for the last XX years. And
+        I’ve noticed that our best apps were those that we put the finishing
+        polish into.
+        <HighlightText>
+          It’s often the last 20% of a products refinement takes it from good to
+          great.
+        </HighlightText>
       </Body>
 
       <Body>
@@ -160,9 +160,26 @@ const IntroHeadline = glamorous.h1({
   }
 })
 
-const SecondaryHeadline = glamorous.h2(
+const SectionHeadline = glamorous.h2(
   {
-    fontSize: 26,
+    fontSize: 36,
+    marginTop: 23,
+    fontFamily: '"Oswald", sans-serif',
+    textTransform: 'uppercase',
+    color: '#36082d',
+    lineHeight: 1.3,
+    [mediaQueries.phone]: {
+      fontSize: 22
+    }
+  },
+  ({ textColor }) => ({
+    color: textColor
+  })
+)
+
+const SupportingHeadline = glamorous.h2(
+  {
+    fontSize: 24,
     marginTop: 23,
     fontFamily: '"Oswald", sans-serif',
     textTransform: 'uppercase',
@@ -254,8 +271,13 @@ const SubtleText = glamorous.span({
   color: '#999'
 })
 
-const RobinLink = glamorous.a({
-  color: '#ec3948'
-})
+const TextLink = glamorous.a(
+  {
+    color: '#fff'
+  },
+  ({ textColor }) => ({
+    color: textColor
+  })
+)
 
 export default Home
