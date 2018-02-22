@@ -109,7 +109,9 @@ const Home = () => (
 
     <LoudContainer backgroundColor={'#ffd14e'}>
       <ContentContainer>
-        <SectionHeadline>As far as my background...</SectionHeadline>
+        <SectionHeadline>
+          What's next & <br /> roles that excite me
+        </SectionHeadline>
         <Body>
           I’ve learned something as a designer that means the difference between
           a team collaborating smoothly and creating an awesome app or not… and
