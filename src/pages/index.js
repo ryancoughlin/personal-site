@@ -240,7 +240,7 @@ const HighlightText = glamorous.span(
     color: '#36082d',
     letterSpacing: '0.017em',
     [mediaQueries.phone]: {
-      fontSize: 16
+      fontSize: 18
     }
   },
   ({ textColor, backgroundColor }) => ({
@@ -252,7 +252,7 @@ const HighlightText = glamorous.span(
 const Body = glamorous.p(
   {
     fontFamily: 'Lora',
-    fontSize: 16,
+    fontSize: 20,
     color: '#36082d',
     lineHeight: 1.64,
     marginBottom: 40,
@@ -269,7 +269,7 @@ const Body = glamorous.p(
 const ListItem = glamorous.li(
   {
     fontFamily: 'Lora',
-    fontSize: 16,
+    fontSize: 20,
     color: '#36082d',
     lineHeight: 1.64,
     marginBottom: 24
@@ -283,7 +283,7 @@ const Blockquote = glamorous.blockquote({
   margin: 0,
   borderLeft: '6px solid #ffd14e',
   paddingLeft: 22,
-  fontSize: 16,
+  fontSize: 20,
   fontFamily: 'Lora',
   fontStyle: 'italic',
   lineHeight: 1.64,
