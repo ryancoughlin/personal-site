@@ -15,7 +15,7 @@ const Home = () => (
     <ContentContainer>
       <TinyHeadline>
         ryan coughlin
-        <SubtleText> / Mainer, designer & fly fishing junkie.</SubtleText>
+        <SubtleText> / Mainer, designer & fly fishing junkie</SubtleText>
       </TinyHeadline>
     </ContentContainer>
 
@@ -110,7 +110,7 @@ const Home = () => (
     <LoudContainer backgroundColor={'#ffd14e'}>
       <ContentContainer>
         <SectionHeadline>
-          What's next & <br /> roles that excite me
+          What&apos;s next & <br /> roles that excite me
         </SectionHeadline>
         <Body>
           I’ve learned something as a designer that means the difference between
@@ -240,7 +240,7 @@ const HighlightText = glamorous.span(
     color: '#36082d',
     letterSpacing: '0.017em',
     [mediaQueries.phone]: {
-      fontSize: 18
+      fontSize: 16
     }
   },
   ({ textColor, backgroundColor }) => ({
@@ -252,12 +252,12 @@ const HighlightText = glamorous.span(
 const Body = glamorous.p(
   {
     fontFamily: 'Lora',
-    fontSize: 18,
+    fontSize: 16,
     color: '#36082d',
     lineHeight: 1.64,
     marginBottom: 40,
     [mediaQueries.phone]: {
-      fontSize: 20,
+      fontSize: 16,
       marginBottom: 22
     }
   },
@@ -269,7 +269,7 @@ const Body = glamorous.p(
 const ListItem = glamorous.li(
   {
     fontFamily: 'Lora',
-    fontSize: 18,
+    fontSize: 16,
     color: '#36082d',
     lineHeight: 1.64,
     marginBottom: 24
@@ -283,7 +283,7 @@ const Blockquote = glamorous.blockquote({
   margin: 0,
   borderLeft: '6px solid #ffd14e',
   paddingLeft: 22,
-  fontSize: 18,
+  fontSize: 16,
   fontFamily: 'Lora',
   fontStyle: 'italic',
   lineHeight: 1.64,
@@ -291,7 +291,8 @@ const Blockquote = glamorous.blockquote({
   marginBottom: 40,
   marginLeft: '-28px',
   [mediaQueries.phone]: {
-    fontSize: 20
+    fontSize: 16,
+    marginLeft: 0
   }
 })
 
