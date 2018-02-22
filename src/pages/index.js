@@ -28,9 +28,9 @@ const Home = () => (
       </Body>
 
       <Blockquote>
-        They were created by a talented and hardworking team. Each team member
+        They were built by a talented and hardworking team. Each team member
         knew the product had a specific problem it was trying to solve. From
-        defining that problem with a design sprint, developing a user journey,
+        defining that problem with a design sprint, developing user journeys,
         and ironing out information architecture with wireframes, each element
         was carefully fashioned to accomplish that goal.
       </Blockquote>
@@ -56,12 +56,21 @@ const Home = () => (
     <LoudContainer>
       <ContentContainer>
         <SectionHeadline textColor={'#b798b1'}>
-          Currently, I am building conference room scheduling products.
+          Currently, I am building meeting room booking software.
         </SectionHeadline>
 
         <Body textColor={'#b798b1'}>
-          After years of immersing myself within product teams consulting at
-          <span>thoughtbot</span> and <span>MojoTech</span>.{' '}
+          After years of immersing myself within product teams consulting
+          at&nbsp;<TextLink
+            textColor={'#b798b1'}
+            href="http://robinpowered.com"
+          >
+            thoughtbot
+          </TextLink>{' '}
+          and{' '}
+          <TextLink textColor={'#b798b1'} href="http://robinpowered.com">
+            MojoTech
+          </TextLink>.{' '}
           <em>
             I missed the ability focus and practice my craft on a single
             platform.
@@ -98,7 +107,20 @@ const Home = () => (
       </ContentContainer>
     </LoudContainer>
 
+    <LoudContainer backgroundColor={'#ffd14e'}>
+      <ContentContainer>
+        <SectionHeadline>As far as my background...</SectionHeadline>
+        <Body>
+          I’ve learned something as a designer that means the difference between
+          a team collaborating smoothly and creating an awesome app or not… and
+          that is passion. When every member of your team is passionate about
+          contributing their expertise to the success of an app, the end result
+          is a much better product.
+        </Body>
+      </ContentContainer>
+    </LoudContainer>
     <ContentContainer>
+      <SectionHeadline>As far as my background...</SectionHeadline>
       <Body>
         I’ve learned something as a designer that means the difference between a
         team collaborating smoothly and creating an awesome app or not… and that
@@ -142,12 +164,16 @@ const ContentContainer = glamorous.div({
   padding: '0 16px'
 })
 
-const LoudContainer = glamorous.div({
-  backgroundColor: '#36082d',
-  paddingTop: 60,
-  paddingBottom: 60,
-  marginBottom: 60
-})
+const LoudContainer = glamorous.div(
+  {
+    backgroundColor: '#36082d',
+    paddingTop: 60,
+    paddingBottom: 60
+  },
+  ({ backgroundColor }) => ({
+    backgroundColor: backgroundColor
+  })
+)
 
 const IntroHeadline = glamorous.h1({
   fontFamily: '"Oswald", sans-serif',
