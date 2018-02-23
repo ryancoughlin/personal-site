@@ -2,10 +2,12 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import glamorous from 'glamorous'
+import Currently from '../components/currently'
+import WhatsNext from '../components/whats-next'
 import Styles from '../common/styles/'
 
 const Home = () => (
-  <Container>
+  <Page>
     <Helmet
       title="Ryan Coughlin - Mainer, Designer an Fly Fishing Junkie"
       meta={[
@@ -20,12 +22,14 @@ const Home = () => (
     </ContentContainer>
 
     <ContentContainer>
-      <IntroHeadline>What makes a great digital product?</IntroHeadline>
+      <Styles.Type.IntroHeadline>
+        What makes a great digital product?
+      </Styles.Type.IntroHeadline>
 
-      <Body>
+      <Styles.Type.Body>
         I’ve been working at that for the last 10 years. And I&apos;ve found
         that all great products have one thing in common:
-      </Body>
+      </Styles.Type.Body>
 
       <Blockquote>
         They were built by a talented and hardworking team. Each team member
@@ -45,93 +49,27 @@ const Home = () => (
         products.
       </SupportingHeadline>
 
-      <Body>
+      <Styles.Type.Body>
         If you’d like to see examples of my previous work, check out my
         portfolio on{' '}
         <TextLink href="http://dribbble.com/ryancoughlin" textColor={'#ea4c89'}>
           Dribbble
         </TextLink>.
-      </Body>
+      </Styles.Type.Body>
     </ContentContainer>
-    <LoudContainer>
-      <ContentContainer>
-        <SectionHeadline textColor={'#b798b1'}>
-          Currently, I am building meeting room booking software.
-        </SectionHeadline>
-
-        <Body textColor={'#b798b1'}>
-          After years of immersing myself within product teams consulting
-          at&nbsp;<TextLink
-            textColor={'#b798b1'}
-            href="http://robinpowered.com"
-          >
-            thoughtbot
-          </TextLink>{' '}
-          and{' '}
-          <TextLink textColor={'#b798b1'} href="http://robinpowered.com">
-            MojoTech
-          </TextLink>.{' '}
-          <em>
-            I missed the ability focus and practice my craft on a single
-            platform.
-          </em>
-        </Body>
-
-        <Body textColor={'#b798b1'}>My day to day consists of:</Body>
-
-        <ul>
-          <ListItem textColor={'#b798b1'}>
-            Working closely with my design team ensuring initiatives are being
-            created and brought to market.
-          </ListItem>
-          <ListItem textColor={'#b798b1'}>
-            Creating organization across visual directions to create design
-            consistency across each product in the platform.
-          </ListItem>
-          <ListItem textColor={'#b798b1'}>
-            Create communication channels with product managers to ensure
-            designs are hitting quarterly goals, validated solving problems and
-            prioritizing the right tasks.
-          </ListItem>
-          <ListItem textColor={'#b798b1'}>
-            Facilitating design sprints with designers, developers and product
-            managers &mdash; <em>Build the right thing, at the right time.</em>
-          </ListItem>
-          <ListItem textColor={'#b798b1'}>
-            Mentoring the design team to help effectively convey the goal of
-            their design and what problem it is trying to solve, addressing
-            pushback from product, prioritizing daily and quarterly tasks, and
-            overall design process.
-          </ListItem>
-        </ul>
-      </ContentContainer>
-    </LoudContainer>
-
-    <LoudContainer backgroundColor={'#ffd14e'}>
-      <ContentContainer>
-        <SectionHeadline>
-          What&apos;s next & <br /> roles that excite me
-        </SectionHeadline>
-        <Body>
-          I’ve learned something as a designer that means the difference between
-          a team collaborating smoothly and creating an awesome app or not… and
-          that is passion. When every member of your team is passionate about
-          contributing their expertise to the success of an app, the end result
-          is a much better product.
-        </Body>
-      </ContentContainer>
-    </LoudContainer>
+    <Currently />
+    <WhatsNext />
     <ContentContainer>
       <SectionHeadline>As far as my background...</SectionHeadline>
-      <Body>
+      <Styles.Type.Body>
         I’ve learned something as a designer that means the difference between a
         team collaborating smoothly and creating an awesome app or not… and that
         is passion. When every member of your team is passionate about
         contributing their expertise to the success of an app, the end result is
         a much better product.
-      </Body>
+      </Styles.Type.Body>
 
-      <Body>
+      <Styles.Type.Body>
         I’ve worked with teams designing awesome apps for the last XX years. And
         I’ve noticed that our best apps were those that we put the finishing
         polish into.
@@ -139,22 +77,23 @@ const Home = () => (
           It’s often the last 20% of a products refinement takes it from good to
           great.
         </HighlightText>
-      </Body>
+      </Styles.Type.Body>
 
-      <Body>
-        Without a doubt, I can say this from my own experience as well. Because
-        not only is app design a job I love, but it’s my passionate hobby as
-        well. I’ve even spent much of my free time creating my own apps.
-      </Body>
+      <Styles.Type.Body>
+        Without ame los doubt, I can say this from my own experience as well.
+        Because not only is app design a job I love, but it’s my passionate
+        hobby as well. I’ve even spent much of my free time creating my own
+        apps.
+      </Styles.Type.Body>
     </ContentContainer>
-  </Container>
+  </Page>
 )
 
 const mediaQueries = {
   phone: '@media only screen and (max-width: 640px)'
 }
 
-const Container = glamorous.div({
+const Page = glamorous.div({
   borderTop: '8px solid #ffd14e',
   paddingTop: 80
 })
@@ -164,28 +103,6 @@ const ContentContainer = glamorous.div({
   width: '100%',
   margin: '0 auto',
   padding: '0 16px'
-})
-
-const LoudContainer = glamorous.div(
-  {
-    backgroundColor: '#36082d',
-    paddingTop: 60,
-    paddingBottom: 60
-  },
-  ({ backgroundColor }) => ({
-    backgroundColor: backgroundColor
-  })
-)
-
-const IntroHeadline = glamorous.h1({
-  fontFamily: '"Oswald", sans-serif',
-  fontSize: 66,
-  textTransform: 'uppercase',
-  color: '#36082d',
-  lineHeight: '1.1',
-  [mediaQueries.phone]: {
-    fontSize: 37
-  }
 })
 
 const SectionHeadline = glamorous.h2(
@@ -249,49 +166,13 @@ const HighlightText = glamorous.span(
   })
 )
 
-const Body = glamorous.p(
-  {
-    fontFamily: 'Lora',
-    fontSize: 20,
-    color: '#36082d',
-    lineHeight: 1.64,
-    marginBottom: 40,
-    [mediaQueries.phone]: {
-      fontSize: 16,
-      marginBottom: 22
-    }
-  },
-  ({ textColor }) => ({
-    color: textColor
-  })
-)
-
-const ListItem = glamorous.li(
-  {
-    fontFamily: 'Lora',
-    fontSize: 20,
-    color: '#36082d',
-    lineHeight: 1.64,
-    marginBottom: 24
-  },
-  ({ textColor }) => ({
-    color: textColor
-  })
-)
-
-const Blockquote = glamorous.blockquote({
-  margin: 0,
+const Blockquote = glamorous(Styles.Type.Body)({
   borderLeft: '6px solid #ffd14e',
   paddingLeft: 22,
-  fontSize: 20,
-  fontFamily: 'Lora',
   fontStyle: 'italic',
-  lineHeight: 1.64,
   color: '#36082d',
-  marginBottom: 40,
   marginLeft: '-28px',
   [mediaQueries.phone]: {
-    fontSize: 16,
     marginLeft: 0
   }
 })
