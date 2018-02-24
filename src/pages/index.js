@@ -6,6 +6,7 @@ import Currently from '../components/currently'
 import WhatsNext from '../components/whats-next'
 import Background from '../components/background'
 import IntroHeadline from '../components/intro-headline'
+import SideProjects from '../components/side-projects'
 import Styles from '../common/styles/'
 
 const Home = () => (
@@ -61,6 +62,7 @@ const Home = () => (
     </Styles.Containers.Content>
     <Currently />
     <WhatsNext />
+    <SideProjects />
     <Background />
   </Page>
 )

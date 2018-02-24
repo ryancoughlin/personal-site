@@ -48,7 +48,10 @@ const SectionHeadline = glamorous.h2(
 
 const Body = glamorous.p(
   {
-    ...baseTextStyle
+    ...baseTextStyle,
+    ':last-of-type': {
+      marginBottom: 0
+    }
   },
   props => ({
     color: props.color,
