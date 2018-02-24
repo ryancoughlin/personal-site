@@ -77,7 +77,7 @@ const SupportingHeadline = glamorous.h2(
     color: '#36082d',
     letterSpacing: '0.017em',
     [mediaQueries.phone]: {
-      fontSize: 22
+      fontSize: 18
     }
   },
   ({ textColor }) => ({
