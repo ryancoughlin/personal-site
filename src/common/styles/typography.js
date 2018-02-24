@@ -67,13 +67,18 @@ const ListItem = glamorous.li(
       position: 'absolute',
       top: -1,
       fontSize: 22,
-      left: 0
+      left: 0,
+      [mediaQueries.phone]: {
+        top: -4
+      }
     },
     ':last-of-type': {
       marginBottom: 0
     },
     [mediaQueries.phone]: {
-      paddingLeft: 24
+      paddingLeft: 32,
+      fontSize: 16,
+      marginBottom: 24
     }
   },
   props => ({

@@ -21,7 +21,7 @@ const Currently = () => (
         and{' '}
         <TextLink color={'#b798b1'} href="http://robinpowered.com">
           MojoTech
-        </TextLink>.{' '}
+        </TextLink>,{' '}
         <em>
           I missed the ability focus and practice my craft on a single platform.
         </em>
