@@ -17,11 +17,15 @@ const WhatsNext = () => (
         <ListItem>High impact, high value projects</ListItem>
         <ListItem>Leading new product initiatives</ListItem>
         <ListItem>Collaborating with design savy front-end engineers</ListItem>
+        <ListItem>Designing products with hardware integrations</ListItem>
         <ListItem>
           Redefining visual directions across products and platforms
         </ListItem>
         <ListItem>Mentoring design team members</ListItem>
-        <ListItem>Bringing 20% time initiatives to market</ListItem>
+        <ListItem>
+          Bringing initiatives to market that are outside of quaterly goals
+          &mdash; These are "20% time initiatives"
+        </ListItem>
       </ul>
       <Action>
         <Body>Sound interesting?</Body>

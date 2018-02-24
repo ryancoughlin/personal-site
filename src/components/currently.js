@@ -53,7 +53,7 @@ const Currently = () => (
         </Styles.Type.ListItem>
         <Styles.Type.ListItem color={'#b798b1'}>
           Mentoring the design team to effectively convey design goals,
-          addressing pushback from product,prioritizing tasks and other design
+          addressing pushback from product, prioritizing tasks and other design
           related processes.
         </Styles.Type.ListItem>
       </ul>

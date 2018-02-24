@@ -28,13 +28,6 @@ const Background = () => (
           great.
         </HighlightText>
       </Styles.Type.Body>
-
-      <Styles.Type.Body>
-        Without ame los doubt, I can say this from my own experience as well.
-        Because not only is app design a job I love, but it’s my passionate
-        hobby as well. I’ve even spent much of my free time creating my own
-        apps.
-      </Styles.Type.Body>
     </Styles.Containers.Content>
   </Styles.Containers.Inner>
 )
