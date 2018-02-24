@@ -3,15 +3,13 @@ import glamorous from 'glamorous'
 import Styles from '../common/styles/'
 
 const IntroHeadline = () => (
-  <Styles.Containers.Content>
-    <TinyHeadline>
-      ryan coughlin
-      <SubtleText>
-        {' '}
-        <Slash>/</Slash> Mainer, designer & fly fishing junkie
-      </SubtleText>
-    </TinyHeadline>
-  </Styles.Containers.Content>
+  <TinyHeadline>
+    ryan coughlin
+    <SubtleText>
+      {' '}
+      <Slash>/</Slash> Mainer, designer & fly fishing junkie
+    </SubtleText>
+  </TinyHeadline>
 )
 
 const mediaQueries = {
