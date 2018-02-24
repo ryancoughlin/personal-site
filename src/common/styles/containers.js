@@ -7,7 +7,7 @@ const mediaQueries = {
 }
 
 const Content = glamorous.div({
-  maxWidth: 680,
+  maxWidth: 640,
   width: '100%',
   margin: '0 auto',
   padding: '0 16px'

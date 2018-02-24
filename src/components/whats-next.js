@@ -20,6 +20,7 @@ const WhatsNext = () => (
           Redefining visual directions across products and platforms
         </ListItem>
         <ListItem>Mentoring design team members</ListItem>
+        <ListItem>Bringing 20% time initiatives to market</ListItem>
       </ul>
       <Action>
         <Body>Sound interesting?</Body>
