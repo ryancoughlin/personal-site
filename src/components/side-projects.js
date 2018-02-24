@@ -56,7 +56,7 @@ const Container = glamorous(Styles.Containers.Inner)({
 
 const Projects = glamorous.div({
   display: 'grid',
-  gridTemplateColumns: '50% 50%',
+  gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
   marginTop: 50
 })
 
