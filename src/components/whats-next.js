@@ -7,7 +7,7 @@ import Styles from '../common/styles/'
 import listArrow from '../assets/images/list-arrow.svg'
 
 const WhatsNext = () => (
-  <Styles.Containers.Loud backgroundColor={'#ffd14e'}>
+  <Styles.Containers.Inner backgroundColor={'#ffd14e'}>
     <Styles.Containers.Content>
       <Headline>
         What&apos;s next <MellowYellow>&</MellowYellow> <br /> roles that excite
@@ -15,6 +15,7 @@ const WhatsNext = () => (
       </Headline>
       <ul>
         <ListItem>High impact, high value projects</ListItem>
+        <ListItem>Leading new product initiatives</ListItem>
         <ListItem>Collaborating with design savy front-end engineers</ListItem>
         <ListItem>
           Redefining visual directions across products and platforms
@@ -27,11 +28,11 @@ const WhatsNext = () => (
         <Button href={'mailto:ryan@ryancoughlin.com'}>Get in Touch</Button>
       </Action>
     </Styles.Containers.Content>
-  </Styles.Containers.Loud>
+  </Styles.Containers.Inner>
 )
 
 const mediaQueries = {
-  phone: '@media only screen and (max-width: 640px)'
+  phone: '@media only screen and (max-width: 520px)'
 }
 
 const Button = glamorous.a({
@@ -72,8 +73,10 @@ const MellowYellow = glamorous.span({
 })
 
 const ListItem = glamorous(Styles.Type.ListItem)({
-  backgroundImage: `url(${listArrow})`,
-  marginBottom: 16
+  marginBottom: 16,
+  [mediaQueries.phone]: {
+    marginBottom: 12
+  }
 })
 
 const TextLink = glamorous.a(

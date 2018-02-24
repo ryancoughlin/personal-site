@@ -5,7 +5,7 @@ import glamorous from 'glamorous'
 import Styles from '../common/styles/'
 
 const Currently = () => (
-  <Styles.Containers.Loud>
+  <Styles.Containers.Inner backgroundColor={'#36082d'}>
     <Styles.Containers.Content>
       <Styles.Type.SectionHeadline color={'#b798b1'}>
         Currently, I am building meeting room booking software.
@@ -50,18 +50,17 @@ const Currently = () => (
           managers &mdash; <em>Build the right thing, at the right time.</em>
         </Styles.Type.ListItem>
         <Styles.Type.ListItem color={'#b798b1'}>
-          Mentoring the design team to help effectively convey the goal of their
-          design and what problem it is trying to solve, addressing pushback
-          from product, prioritizing daily and quarterly tasks, and overall
-          design process.
+          Mentoring the design team to effectively convey design goals,
+          addressing pushback from product, prioritizing daily and quarterly
+          tasks, and overall design process.
         </Styles.Type.ListItem>
       </ul>
     </Styles.Containers.Content>
-  </Styles.Containers.Loud>
+  </Styles.Containers.Inner>
 )
 
 const mediaQueries = {
-  phone: '@media only screen and (max-width: 640px)'
+  phone: '@media only screen and (max-width: 520px)'
 }
 
 const SectionHeadline = glamorous.h2(

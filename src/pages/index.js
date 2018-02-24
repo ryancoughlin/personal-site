@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import glamorous from 'glamorous'
 import Currently from '../components/currently'
 import WhatsNext from '../components/whats-next'
+import Background from '../components/background'
 import Styles from '../common/styles/'
 
 const Home = () => (
@@ -59,40 +60,12 @@ const Home = () => (
     </Styles.Containers.Content>
     <Currently />
     <WhatsNext />
-    <Styles.Containers.Content>
-      <Styles.Type.SectionHeadline>
-        As far as my background...
-      </Styles.Type.SectionHeadline>
-      <Styles.Type.Body>
-        I’ve learned something as a designer that means the difference between a
-        team collaborating smoothly and creating an awesome app or not… and that
-        is passion. When every member of your team is passionate about
-        contributing their expertise to the success of an app, the end result is
-        a much better product.
-      </Styles.Type.Body>
-
-      <Styles.Type.Body>
-        I’ve worked with teams designing awesome apps for the last XX years. And
-        I’ve noticed that our best apps were those that we put the finishing
-        polish into.
-        <HighlightText>
-          It’s often the last 20% of a products refinement takes it from good to
-          great.
-        </HighlightText>
-      </Styles.Type.Body>
-
-      <Styles.Type.Body>
-        Without ame los doubt, I can say this from my own experience as well.
-        Because not only is app design a job I love, but it’s my passionate
-        hobby as well. I’ve even spent much of my free time creating my own
-        apps.
-      </Styles.Type.Body>
-    </Styles.Containers.Content>
+    <Background />
   </Page>
 )
 
 const mediaQueries = {
-  phone: '@media only screen and (max-width: 640px)'
+  phone: '@media only screen and (max-width: 520px)'
 }
 
 const Page = glamorous.div({
@@ -123,26 +96,6 @@ const TinyHeadline = glamorous.h5({
   fontFamily: '-apple-system, "Helvetica Neue", "Lucida Grande"',
   letterSpacing: '0.06em'
 })
-
-const HighlightText = glamorous.span(
-  {
-    fontSize: 20,
-    fontFamily: '"Oswald", sans-serif',
-    backgroundColor: '#ffd14e',
-    textTransform: 'uppercase',
-    padding: '4px 6px 2px 6px',
-    marginLeft: 4,
-    color: '#36082d',
-    letterSpacing: '0.017em',
-    [mediaQueries.phone]: {
-      fontSize: 18
-    }
-  },
-  ({ textColor, backgroundColor }) => ({
-    backgroundColor: backgroundColor,
-    color: textColor
-  })
-)
 
 const Blockquote = glamorous(Styles.Type.Body)({
   borderLeft: '6px solid #ffd14e',

@@ -4,7 +4,7 @@ import Spacing from './spacing'
 import listArrow from '../../assets/images/list-arrow-light.svg'
 
 const mediaQueries = {
-  phone: '@media only screen and (max-width: 640px)'
+  phone: '@media only screen and (max-width: 520px)'
 }
 
 const bodyFontFamily = 'Lora'
@@ -36,7 +36,7 @@ const SectionHeadline = glamorous.h2(
     color: '#36082d',
     lineHeight: 1.3,
     [mediaQueries.phone]: {
-      fontSize: 22
+      fontSize: 26
     }
   },
   props => ({
@@ -59,11 +59,22 @@ const Body = glamorous.p(
 const ListItem = glamorous.li(
   {
     ...baseTextStyle,
-    backgroundImage: `url(${listArrow})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'left 10px',
     listStyleType: 'none',
-    paddingLeft: 40
+    paddingLeft: 40,
+    position: 'relative',
+    '&::after': {
+      content: '→',
+      position: 'absolute',
+      top: -1,
+      fontSize: 22,
+      left: 0
+    },
+    ':last-of-type': {
+      marginBottom: 0
+    },
+    [mediaQueries.phone]: {
+      paddingLeft: 24
+    }
   },
   props => ({
     color: props.color,
@@ -72,7 +83,7 @@ const ListItem = glamorous.li(
 )
 
 const IntroHeadline = glamorous(SectionHeadline)({
-  fontSize: 66
+  fontSize: 62
 })
 
 const Type = {}

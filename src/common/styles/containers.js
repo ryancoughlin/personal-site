@@ -3,21 +3,24 @@ import { Colors } from './colors'
 import Spacing from './spacing'
 
 const mediaQueries = {
-  phone: '@media only screen and (max-width: 640px)'
+  phone: '@media only screen and (max-width: 520px)'
 }
 
 const Content = glamorous.div({
-  maxWidth: 640,
+  maxWidth: 620,
   width: '100%',
   margin: '0 auto',
   padding: '0 16px'
 })
 
-const Loud = glamorous.div(
+const Inner = glamorous.div(
   {
-    backgroundColor: '#36082d',
-    paddingTop: 60,
-    paddingBottom: 60
+    paddingTop: 80,
+    paddingBottom: 80,
+    [mediaQueries.phone]: {
+      paddingTop: 30,
+      paddingBottom: 30
+    }
   },
   ({ backgroundColor }) => ({
     backgroundColor: backgroundColor
@@ -26,7 +29,7 @@ const Loud = glamorous.div(
 
 const Containers = {}
 
-Containers.Loud = Loud
+Containers.Inner = Inner
 Containers.Content = Content
 
 export default Containers
