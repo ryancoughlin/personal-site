@@ -28,7 +28,7 @@ const Currently = () => (
       </Styles.Type.Body>
 
       <Styles.Type.Body color={'#b798b1'}>
-        My day to day consists of:
+        My day-to-day consists of:
       </Styles.Type.Body>
 
       <ul>
