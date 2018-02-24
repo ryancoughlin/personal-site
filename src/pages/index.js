@@ -14,14 +14,14 @@ const Home = () => (
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ]}
     />
-    <ContentContainer>
+    <Styles.Containers.Content>
       <TinyHeadline>
         ryan coughlin
         <SubtleText> / Mainer, designer & fly fishing junkie</SubtleText>
       </TinyHeadline>
-    </ContentContainer>
+    </Styles.Containers.Content>
 
-    <ContentContainer>
+    <Styles.Containers.Content>
       <Styles.Type.IntroHeadline>
         What makes a great digital product?
       </Styles.Type.IntroHeadline>
@@ -56,11 +56,13 @@ const Home = () => (
           Dribbble
         </TextLink>.
       </Styles.Type.Body>
-    </ContentContainer>
+    </Styles.Containers.Content>
     <Currently />
     <WhatsNext />
-    <ContentContainer>
-      <SectionHeadline>As far as my background...</SectionHeadline>
+    <Styles.Containers.Content>
+      <Styles.Type.SectionHeadline>
+        As far as my background...
+      </Styles.Type.SectionHeadline>
       <Styles.Type.Body>
         I’ve learned something as a designer that means the difference between a
         team collaborating smoothly and creating an awesome app or not… and that
@@ -85,7 +87,7 @@ const Home = () => (
         hobby as well. I’ve even spent much of my free time creating my own
         apps.
       </Styles.Type.Body>
-    </ContentContainer>
+    </Styles.Containers.Content>
   </Page>
 )
 
@@ -97,30 +99,6 @@ const Page = glamorous.div({
   borderTop: '8px solid #ffd14e',
   paddingTop: 80
 })
-
-const ContentContainer = glamorous.div({
-  maxWidth: 640,
-  width: '100%',
-  margin: '0 auto',
-  padding: '0 16px'
-})
-
-const SectionHeadline = glamorous.h2(
-  {
-    fontSize: 36,
-    marginTop: 23,
-    fontFamily: '"Oswald", sans-serif',
-    textTransform: 'uppercase',
-    color: '#36082d',
-    lineHeight: 1.3,
-    [mediaQueries.phone]: {
-      fontSize: 22
-    }
-  },
-  ({ textColor }) => ({
-    color: textColor
-  })
-)
 
 const SupportingHeadline = glamorous.h2(
   {

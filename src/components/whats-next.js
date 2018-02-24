@@ -4,20 +4,27 @@ import Helmet from 'react-helmet'
 import glamorous from 'glamorous'
 import Currently from '../components/currently'
 import Styles from '../common/styles/'
+import listArrow from '../assets/images/list-arrow.svg'
 
 const WhatsNext = () => (
   <Styles.Containers.Loud backgroundColor={'#ffd14e'}>
     <Styles.Containers.Content>
-      <SectionHeadline>
-        What&apos;s next & <br /> roles that excite me
-      </SectionHeadline>
-      <Styles.Type.Body>
-        I’ve learned something as a designer that means the difference between a
-        team collaborating smoothly and creating an awesome app or not… and that
-        is passion. When every member of your team is passionate about
-        contributing their expertise to the success of an app, the end result is
-        a much better product.
-      </Styles.Type.Body>
+      <Headline>
+        What&apos;s next <MellowYellow>&</MellowYellow> <br /> roles that excite
+        me
+      </Headline>
+      <ul>
+        <ListItem>High impact, high value projects</ListItem>
+        <ListItem>Collaborating with design savy front-end engineers</ListItem>
+        <ListItem>
+          Redefining visual directions across products and platforms
+        </ListItem>
+        <ListItem>Mentoring design team members</ListItem>
+      </ul>
+      <Action>
+        <Body>Sound interesting?</Body>
+        <Button href={'mailto:ryan@ryancoughlin.com'}>Get in Touch</Button>
+      </Action>
     </Styles.Containers.Content>
   </Styles.Containers.Loud>
 )
@@ -26,22 +33,47 @@ const mediaQueries = {
   phone: '@media only screen and (max-width: 640px)'
 }
 
-const SectionHeadline = glamorous.h2(
-  {
-    fontSize: 36,
-    marginTop: 23,
-    fontFamily: '"Oswald", sans-serif',
-    textTransform: 'uppercase',
-    color: '#36082d',
-    lineHeight: 1.3,
-    [mediaQueries.phone]: {
-      fontSize: 22
-    }
-  },
-  ({ textColor }) => ({
-    color: textColor
-  })
-)
+const Button = glamorous.a({
+  fontFamily: 'Lora',
+  fontSize: 20,
+  color: '#36082d',
+  border: '2.5px solid #36082d',
+  backgroundColor: 'transparent',
+  marginLeft: 24,
+  paddingLeft: 24,
+  paddingRight: 24,
+  height: 56,
+  lineHeight: 2.25,
+  textAlign: 'center',
+  textDecoration: 'none',
+  ':hover': {
+    backgroundColor: '#36082d',
+    color: 'white'
+  }
+})
+
+const Headline = glamorous(Styles.Type.SectionHeadline)({
+  fontSize: 56
+})
+
+const Body = glamorous(Styles.Type.Body)({
+  marginBottom: 0
+})
+
+const Action = glamorous.div({
+  marginTop: 100,
+  display: 'flex',
+  alignItems: 'center'
+})
+
+const MellowYellow = glamorous.span({
+  color: '#C4A03B'
+})
+
+const ListItem = glamorous(Styles.Type.ListItem)({
+  backgroundImage: `url(${listArrow})`,
+  marginBottom: 16
+})
 
 const TextLink = glamorous.a(
   {
