@@ -5,6 +5,7 @@ import glamorous from 'glamorous'
 import Currently from '../components/currently'
 import WhatsNext from '../components/whats-next'
 import Background from '../components/background'
+import IntroHeadline from '../components/intro-headline'
 import Styles from '../common/styles/'
 
 const Home = () => (
@@ -15,13 +16,7 @@ const Home = () => (
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ]}
     />
-    <Styles.Containers.Content>
-      <TinyHeadline>
-        ryan coughlin
-        <SubtleText> / Mainer, designer & fly fishing junkie</SubtleText>
-      </TinyHeadline>
-    </Styles.Containers.Content>
-
+    <IntroHeadline />
     <Styles.Containers.Content>
       <Styles.Type.IntroHeadline>
         What makes a great digital product?
@@ -90,13 +85,6 @@ const SupportingHeadline = glamorous.h2(
   })
 )
 
-const TinyHeadline = glamorous.h5({
-  fontSize: 11,
-  textTransform: 'uppercase',
-  fontFamily: '-apple-system, "Helvetica Neue", "Lucida Grande"',
-  letterSpacing: '0.06em'
-})
-
 const Blockquote = glamorous(Styles.Type.Body)({
   borderLeft: '6px solid #ffd14e',
   paddingLeft: 22,
@@ -106,10 +94,6 @@ const Blockquote = glamorous(Styles.Type.Body)({
   [mediaQueries.phone]: {
     marginLeft: 0
   }
-})
-
-const SubtleText = glamorous.span({
-  color: '#999'
 })
 
 const TextLink = glamorous.a(
