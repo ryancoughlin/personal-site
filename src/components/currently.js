@@ -42,8 +42,10 @@ const Currently = () => (
         </Styles.Type.ListItem>
         <Styles.Type.ListItem color={'#b798b1'}>
           Create communication channels with product managers to ensure designs
-          are hitting quarterly goals, validated solving problems and
-          prioritizing the right tasks.
+          are hitting quarterly goals.
+        </Styles.Type.ListItem>
+        <Styles.Type.ListItem color={'#b798b1'}>
+          Experimenting with processes to bridge designer / developer hand off
         </Styles.Type.ListItem>
         <Styles.Type.ListItem color={'#b798b1'}>
           Facilitating design sprints with designers, developers and product
@@ -51,8 +53,8 @@ const Currently = () => (
         </Styles.Type.ListItem>
         <Styles.Type.ListItem color={'#b798b1'}>
           Mentoring the design team to effectively convey design goals,
-          addressing pushback from product, prioritizing daily and quarterly
-          tasks, and overall design process.
+          addressing pushback from product,prioritizing tasks and other design
+          related processes.
         </Styles.Type.ListItem>
       </ul>
     </Styles.Containers.Content>

@@ -16,42 +16,48 @@ const Home = () => (
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ]}
     />
-    <IntroHeadline />
     <Styles.Containers.Content>
-      <Styles.Type.IntroHeadline>
-        What makes a great digital product?
-      </Styles.Type.IntroHeadline>
+      <Styles.Containers.Inner>
+        <IntroHeadline />
 
-      <Styles.Type.Body>
-        I’ve been working at that for the last 10 years. And I&apos;ve found
-        that all great products have one thing in common:
-      </Styles.Type.Body>
+        <Styles.Type.IntroHeadline>
+          What makes a great digital product?
+        </Styles.Type.IntroHeadline>
 
-      <Blockquote>
-        They were built by a talented and hardworking team. Each team member
-        knew the product had a specific problem it was trying to solve. From
-        defining that problem with a design sprint, developing user journeys,
-        and ironing out information architecture with wireframes, each element
-        was carefully fashioned to accomplish that goal.
-      </Blockquote>
+        <Styles.Type.Body>
+          I’ve been working at that for the last 10 years. And I&apos;ve found
+          that all great products have one thing in common:
+        </Styles.Type.Body>
 
-      <SupportingHeadline>
-        Hi, my name is Ryan Coughlin, and I’m a designer at&nbsp;<TextLink
-          textColor={'#ec3948'}
-          href="http://robinpowered.com"
-        >
-          robin
-        </TextLink>. I figure out creative ways to make practical and innovative
-        products.
-      </SupportingHeadline>
+        <Blockquote>
+          They were built by a talented and hardworking team. Each team member
+          knew the product had a specific problem it was trying to solve. From
+          defining that problem with a design sprint, developing user journeys,
+          and ironing out information architecture with wireframes, each element
+          was carefully fashioned to accomplish that goal.
+        </Blockquote>
 
-      <Styles.Type.Body>
-        If you’d like to see examples of my previous work, check out my
-        portfolio on{' '}
-        <TextLink href="http://dribbble.com/ryancoughlin" textColor={'#ea4c89'}>
-          Dribbble
-        </TextLink>.
-      </Styles.Type.Body>
+        <SupportingHeadline>
+          Hi, my name is Ryan Coughlin, and I’m a designer at&nbsp;<TextLink
+            textColor={'#ec3948'}
+            href="http://robinpowered.com"
+          >
+            robin
+          </TextLink>. I figure out creative ways to make practical and
+          innovative products.
+        </SupportingHeadline>
+
+        <Styles.Type.Body>
+          If you’d like to see examples of my previous work, check out my
+          portfolio on{' '}
+          <TextLink
+            href="http://dribbble.com/ryancoughlin"
+            textColor={'#ea4c89'}
+          >
+            Dribbble
+          </TextLink>.
+        </Styles.Type.Body>
+      </Styles.Containers.Inner>
     </Styles.Containers.Content>
     <Currently />
     <WhatsNext />
@@ -64,8 +70,7 @@ const mediaQueries = {
 }
 
 const Page = glamorous.div({
-  borderTop: '8px solid #ffd14e',
-  paddingTop: 80
+  borderTop: '8px solid #ffd14e'
 })
 
 const SupportingHeadline = glamorous.h2(

@@ -10,7 +10,9 @@ const Content = glamorous.div({
   maxWidth: 620,
   width: '100%',
   margin: '0 auto',
-  padding: '0 16px'
+  [mediaQueries.phone]: {
+    padding: '0 16px'
+  }
 })
 
 const Inner = glamorous.div(
