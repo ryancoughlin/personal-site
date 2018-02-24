@@ -31,11 +31,12 @@ const Home = () => (
         </Styles.Type.Body>
 
         <Blockquote>
-          They were built by a talented and hardworking team. Each team member
-          knew the product had a specific problem it was trying to solve. From
-          defining that problem with a design sprint, developing user journeys,
-          and ironing out information architecture with wireframes, each element
-          was carefully fashioned to accomplish that goal.
+          They were created by a talented and cohesive team. The problem the
+          product solved was clearly known by each team member.
+          <br /> <br />
+          Each step was thoughtfully crafted from: defining the problem,
+          developing user journeys, validating the product, and creating an
+          initial plan to wireframe, design, and bring that product to market.
         </Blockquote>
 
         <SupportingHeadline>
@@ -72,19 +73,20 @@ const mediaQueries = {
 }
 
 const Page = glamorous.div({
-  borderTop: '8px solid #ffd14e'
+  borderTop: '6px solid #ffd14e'
 })
 
 const SupportingHeadline = glamorous.h2(
   {
     fontSize: 24,
-    marginTop: 23,
     fontFamily: '"Oswald", sans-serif',
     textTransform: 'uppercase',
     color: '#36082d',
     letterSpacing: '0.017em',
+    marginBottom: 40,
     [mediaQueries.phone]: {
-      fontSize: 18
+      fontSize: 18,
+      marginBottom: 22
     }
   },
   ({ textColor }) => ({
@@ -93,7 +95,7 @@ const SupportingHeadline = glamorous.h2(
 )
 
 const Blockquote = glamorous(Styles.Type.Body)({
-  borderLeft: '6px solid #ffd14e',
+  borderLeft: '4px solid #ffd14e',
   paddingLeft: 22,
   fontStyle: 'italic',
   color: '#36082d',
