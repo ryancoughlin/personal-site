@@ -17,7 +17,7 @@ const WhatsNext = () => (
         <ListItem>High impact, high value projects</ListItem>
         <ListItem>Leading new product initiatives</ListItem>
         <ListItem>Collaborating with design savy front-end engineers</ListItem>
-        <ListItem>Designing products with hardware integrations</ListItem>
+        <ListItem>Building products that talk to hardware</ListItem>
         <ListItem>
           Redefining visual directions across products and platforms
         </ListItem>
