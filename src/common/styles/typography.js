@@ -88,7 +88,10 @@ const ListItem = glamorous.li(
 )
 
 const IntroHeadline = glamorous(SectionHeadline)({
-  fontSize: 62
+  fontSize: 62,
+  [mediaQueries.phone]: {
+    fontSize: 32
+  }
 })
 
 const Type = {}
