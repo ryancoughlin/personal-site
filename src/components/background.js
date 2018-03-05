@@ -18,16 +18,6 @@ const Background = () => (
         like to chat about how my passion for launching products and growing
         your brand identity could benefit your team, reach out.
       </Styles.Type.Body>
-
-      <Styles.Type.Body>
-        I’ve worked with teams designing awesome apps for the last XX years. And
-        I’ve noticed that our best apps were those that we put the finishing
-        polish into.
-        <HighlightText>
-          It’s often the last 20% of a products refinement takes it from good to
-          great.
-        </HighlightText>
-      </Styles.Type.Body>
     </Styles.Containers.Content>
   </Styles.Containers.Inner>
 )
