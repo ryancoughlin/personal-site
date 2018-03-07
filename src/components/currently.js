@@ -23,7 +23,7 @@ const Currently = () => (
           MojoTech
         </TextLink>,{' '}
         <em>
-          I missed the ability focus and practice my craft on a single platform.
+          I missed the ability to focus and practice my craft on a single platform.
         </em>
       </Styles.Type.Body>
 
@@ -32,30 +32,30 @@ const Currently = () => (
       </Styles.Type.Body>
 
       <ul>
-        <Styles.Type.ListItem color={'#b798b1'}>
+        <ListItem color={'#b798b1'}>
           Working closely with my design team ensuring initiatives are being
           created and brought to market.
-        </Styles.Type.ListItem>
-        <Styles.Type.ListItem color={'#b798b1'}>
+        </ListItem>
+        <ListItem color={'#b798b1'}>
           Creating organization across visual directions to create design
           consistency across each product in the platform.
-        </Styles.Type.ListItem>
-        <Styles.Type.ListItem color={'#b798b1'}>
+        </ListItem>
+        <ListItem color={'#b798b1'}>
           Create communication channels with product managers to ensure designs
           are hitting quarterly goals.
-        </Styles.Type.ListItem>
-        <Styles.Type.ListItem color={'#b798b1'}>
+        </ListItem>
+        <ListItem color={'#b798b1'}>
           Experimenting with processes to bridge designer / developer hand off
-        </Styles.Type.ListItem>
-        <Styles.Type.ListItem color={'#b798b1'}>
+        </ListItem>
+        <ListItem color={'#b798b1'}>
           Facilitating design sprints with designers, developers and product
           managers &mdash; <em>Build the right thing, at the right time.</em>
-        </Styles.Type.ListItem>
-        <Styles.Type.ListItem color={'#b798b1'}>
+        </ListItem>
+        <ListItem color={'#b798b1'}>
           Mentoring the design team to effectively convey design goals,
           addressing pushback from product, prioritizing tasks and other design
           related processes.
-        </Styles.Type.ListItem>
+        </ListItem>
       </ul>
     </Styles.Containers.Content>
   </Styles.Containers.Inner>
@@ -82,10 +82,9 @@ const SectionHeadline = glamorous.h2(
   })
 )
 
-const ListItem = glamorous(Styles.Type.Body)(props => ({
-  color: props.color,
-  marginBottom: props.marginBottom
-}))
+const ListItem = glamorous(Styles.Type.ListItem)({
+  marginBottom: 24
+})
 
 const TextLink = glamorous.a(
   {
