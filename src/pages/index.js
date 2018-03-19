@@ -81,7 +81,7 @@ const Home = () => (
 
         <Styles.Type.Body>
           I did not have the opportunity to practice my craft on a single
-          platform.
+          platform. To fill that void, I made the jump to work full time at a product company.
         </Styles.Type.Body>
       </Styles.Containers.Inner>
     </Styles.Containers.Content>
