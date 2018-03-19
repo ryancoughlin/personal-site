@@ -41,7 +41,7 @@ const Home = () => (
 
         <SupportingHeadline>
           Hi, my name is Ryan Coughlin, and I’m a designer at&nbsp;<TextLink
-            textColor={'#ec3948'}
+            color={'#ec3948'}
             href="http://robinpowered.com"
           >
             robin
@@ -52,10 +52,7 @@ const Home = () => (
         <Styles.Type.Body>
           If you’d like to see examples of my previous work, check out my
           portfolio on{' '}
-          <TextLink
-            href="http://dribbble.com/ryancoughlin"
-            textColor={'#ea4c89'}
-          >
+          <TextLink href="http://dribbble.com/ryancoughlin" color={'#ea4c89'}>
             Dribbble
           </TextLink>.
         </Styles.Type.Body>
@@ -65,11 +62,11 @@ const Home = () => (
         </Styles.Type.SectionHeadline>
         <Styles.Type.Body>
           ...my time was spent consulting at{' '}
-          <TextLink color={'#b798b1'} href="http://robinpowered.com">
+          <TextLink color={'#ed3e44'} href="http://robinpowered.com">
             thoughtbot
           </TextLink>{' '}
           and{' '}
-          <TextLink color={'#b798b1'} href="http://robinpowered.com">
+          <TextLink color={'#1cb847'} href="http://robinpowered.com">
             MojoTech
           </TextLink>. At these companies, I consulted for early stage startups,
           product companies, and large corporations. My roles included:
@@ -116,8 +113,8 @@ const SupportingHeadline = glamorous.h2(
       marginBottom: 22
     }
   },
-  ({ textColor }) => ({
-    color: textColor
+  ({ color }) => ({
+    color: color
   })
 )
 
@@ -141,7 +138,7 @@ const TextLink = glamorous.a(
     color: '#fff'
   },
   props => ({
-    color: props.textColor
+    color: props.color
   })
 )
 
