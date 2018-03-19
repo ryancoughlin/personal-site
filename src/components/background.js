@@ -8,15 +8,17 @@ const Background = () => (
   <Styles.Containers.Inner>
     <Styles.Containers.Content>
       <Styles.Type.SectionHeadline>
-        As far as my background...
+        Boston born, Maine raised
       </Styles.Type.SectionHeadline>
       <Styles.Type.Body>
-        I was raised in a small coastal town in Maine. I&apos;ve always had a
-        love of the great outdoors and being on the water. Hiking, fly
-        fishing—you name it, I do it. My love for the outdoors and New England
-        is where my interest for design started. I love what I do... If you’d
-        like to chat about how my passion for launching products and growing
-        your brand identity could benefit your team, reach out.
+        I grew up in a small coastal town in Maine. I&apos;ve always loved the
+        great outdoors and being on the water. Hiking, fly fishing—you name it,
+        I do it.
+      </Styles.Type.Body>
+
+      <Styles.Type.Body>
+        In my free time, I enjoy shooting photos, tying flies, and exploring new
+        water.
       </Styles.Type.Body>
     </Styles.Containers.Content>
   </Styles.Containers.Inner>

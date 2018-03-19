@@ -17,8 +17,12 @@ const SideProjects = () => (
       <Styles.Type.Body>
         As much as I love design, I was getting tired of only being able to make
         something in Sketch. Four years ago, I began to learn Objective C, which
-        transitioned into Swift and recently have been working with React Native
-        to build and ship side projects.
+        transitioned into Swift.
+      </Styles.Type.Body>
+
+      <Styles.Type.Body>
+        Over the past the year, I have been working with React Native to build a
+        few of the projects you can check out below.
       </Styles.Type.Body>
 
       <Styles.Type.Body>A few of them can be seen below:</Styles.Type.Body>

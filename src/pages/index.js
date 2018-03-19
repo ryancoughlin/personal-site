@@ -59,6 +59,27 @@ const Home = () => (
             Dribbble
           </TextLink>.
         </Styles.Type.Body>
+
+        <Styles.Type.SectionHeadline>
+          Prior to Robin...
+        </Styles.Type.SectionHeadline>
+        <Styles.Type.Body>
+          ...my time was spent consulting at thoughbot and Mojotech. At these
+          companies, I consulted for early stage startups, product companies,
+          and large corporations. My roles included:
+        </Styles.Type.Body>
+
+        <ul>
+          <ListItem>Product ideation and validation</ListItem>
+          <ListItem>Design sprint facilitation</ListItem>
+          <ListItem>Front-end design implementation</ListItem>
+          <ListItem>Collaborating with product managers</ListItem>
+        </ul>
+
+        <Styles.Type.Body>
+          I did not have the opportunity to practice my craft on a single
+          platform.
+        </Styles.Type.Body>
       </Styles.Containers.Inner>
     </Styles.Containers.Content>
     <Currently />
@@ -103,6 +124,10 @@ const Blockquote = glamorous(Styles.Type.Body)({
   [mediaQueries.phone]: {
     marginLeft: 0
   }
+})
+
+const ListItem = glamorous(Styles.Type.ListItem)({
+  marginBottom: 24
 })
 
 const TextLink = glamorous.a(

@@ -23,7 +23,8 @@ const Currently = () => (
           MojoTech
         </TextLink>,{' '}
         <em>
-          I missed the ability to focus and practice my craft on a single platform.
+          I missed the ability to focus and practice my craft on a single
+          platform.
         </em>
       </Styles.Type.Body>
 
@@ -33,28 +34,27 @@ const Currently = () => (
 
       <ul>
         <ListItem color={'#b798b1'}>
-          Working closely with my design team ensuring initiatives are being
-          created and brought to market.
+          Closely working with the design team to inspire new ideas and bring
+          them to market
         </ListItem>
         <ListItem color={'#b798b1'}>
-          Creating organization across visual directions to create design
-          consistency across each product in the platform.
+          Ensuring visual and product design consistency across each product
+          within the platform
         </ListItem>
         <ListItem color={'#b798b1'}>
-          Create communication channels with product managers to ensure designs
-          are hitting quarterly goals.
+          Creating communication channels with product team to ensure designs
+          are hitting quarterly goals
         </ListItem>
         <ListItem color={'#b798b1'}>
-          Experimenting with processes to bridge designer / developer hand off
+          Building design systems to decrease designer / developer hand-off
         </ListItem>
         <ListItem color={'#b798b1'}>
           Facilitating design sprints with designers, developers and product
           managers &mdash; <em>Build the right thing, at the right time.</em>
         </ListItem>
         <ListItem color={'#b798b1'}>
-          Mentoring the design team to effectively convey design goals,
-          addressing pushback from product, prioritizing tasks and other design
-          related processes.
+          Mentoring the design team to convey design goals, address product team
+          feedback, prioritize tasks, and other design related processes
         </ListItem>
       </ul>
     </Styles.Containers.Content>
