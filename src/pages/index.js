@@ -62,11 +62,11 @@ const Home = () => (
         </Styles.Type.SectionHeadline>
         <Styles.Type.Body>
           ...my time was spent consulting at{' '}
-          <TextLink color={'#ed3e44'} href="http://robinpowered.com">
+          <TextLink color={'#ed3e44'} href="http://thoughtbot.com">
             thoughtbot
           </TextLink>{' '}
           and{' '}
-          <TextLink color={'#1cb847'} href="http://robinpowered.com">
+          <TextLink color={'#1cb847'} href="http://mojotech.com">
             MojoTech
           </TextLink>. At these companies, I consulted for early stage startups,
           product companies, and large corporations. My roles included:
