@@ -12,8 +12,8 @@ const Background = () => (
       </Styles.Type.SectionHeadline>
       <Styles.Type.Body>
         I grew up in a small coastal town in Maine. I&apos;ve always loved the
-        great outdoors and being on the water. Hiking, fly fishing—you name it,
-        I do it.
+        outdoors and being on the water. Hiking, fly fishing—you name it, I do
+        it.
       </Styles.Type.Body>
 
       <Styles.Type.Body>
