@@ -80,7 +80,7 @@ const Home = () => (
         </ul>
 
         <Styles.Type.Body>
-          I did not have the opportunity to practice my craft on a single
+          As much as I enjoyed this work, I did not have the opportunity to practice my craft on a single
           platform. To fill that void, I made the jump to work full time at a product company.
         </Styles.Type.Body>
       </Styles.Containers.Inner>
