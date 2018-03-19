@@ -22,10 +22,6 @@ const WhatsNext = () => (
           Redefining visual directions across products and platforms
         </ListItem>
         <ListItem>Mentoring design team members</ListItem>
-        <ListItem>
-          Bringing initiatives to market that are outside of quarterly goals
-          &mdash; These are "20% time projects"
-        </ListItem>
       </ul>
       <Action>
         <Body>Sound interesting?</Body>

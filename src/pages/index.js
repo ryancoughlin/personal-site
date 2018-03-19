@@ -140,8 +140,8 @@ const TextLink = glamorous.a(
   {
     color: '#fff'
   },
-  ({ textColor }) => ({
-    color: textColor
+  props => ({
+    color: props.textColor
   })
 )
 
