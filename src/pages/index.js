@@ -64,9 +64,15 @@ const Home = () => (
           Prior to Robin...
         </Styles.Type.SectionHeadline>
         <Styles.Type.Body>
-          ...my time was spent consulting at thoughbot and Mojotech. At these
-          companies, I consulted for early stage startups, product companies,
-          and large corporations. My roles included:
+          ...my time was spent consulting at{' '}
+          <TextLink color={'#b798b1'} href="http://robinpowered.com">
+            thoughtbot
+          </TextLink>{' '}
+          and{' '}
+          <TextLink color={'#b798b1'} href="http://robinpowered.com">
+            MojoTech
+          </TextLink>. At these companies, I consulted for early stage startups,
+          product companies, and large corporations. My roles included:
         </Styles.Type.Body>
 
         <ul>

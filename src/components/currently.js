@@ -12,23 +12,6 @@ const Currently = () => (
       </Styles.Type.SectionHeadline>
 
       <Styles.Type.Body color={'#b798b1'}>
-        After years of immersing myself within product teams consulting at&nbsp;<TextLink
-          color={'#b798b1'}
-          href="http://robinpowered.com"
-        >
-          thoughtbot
-        </TextLink>{' '}
-        and{' '}
-        <TextLink color={'#b798b1'} href="http://robinpowered.com">
-          MojoTech
-        </TextLink>,{' '}
-        <em>
-          I missed the ability to focus and practice my craft on a single
-          platform.
-        </em>
-      </Styles.Type.Body>
-
-      <Styles.Type.Body color={'#b798b1'}>
         My day-to-day consists of:
       </Styles.Type.Body>
 
@@ -50,7 +33,7 @@ const Currently = () => (
         </ListItem>
         <ListItem color={'#b798b1'}>
           Facilitating design sprints with designers, developers and product
-          managers &mdash; <em>Build the right thing, at the right time.</em>
+          managers &mdash; <em>Build the right thing, at the right time</em>
         </ListItem>
         <ListItem color={'#b798b1'}>
           Mentoring the design team to convey design goals, address product team
@@ -85,14 +68,5 @@ const SectionHeadline = glamorous.h2(
 const ListItem = glamorous(Styles.Type.ListItem)({
   marginBottom: 24
 })
-
-const TextLink = glamorous.a(
-  {
-    color: '#fff'
-  },
-  ({ color }) => ({
-    color: color
-  })
-)
 
 export default Currently
