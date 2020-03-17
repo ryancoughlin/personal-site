@@ -29,10 +29,9 @@ const Introduction = () => (
       </Text>
       <Text fontSize={[2, 4]} mb={3} fontWeight={"bold"}>
         What I’ve found so far is that every product should start with a
-        discovery phase of cross-team research, and customer validation. This
+        discovery phase of cross-team research and customer validation. This
         provides a foundation to define problems, solve them, and iteratively
-        deliver solutions to customers. For the best results, teams stay aligned
-        an collaborate on these solutions.
+        deliver solutions to customers. Teams who are aligned and collaborative have the ability to produce some amazing work.
       </Text>
       <Text fontSize={[2, 4]} mb={3}>
         Design can deliver a great experience by:
@@ -50,7 +49,7 @@ const Introduction = () => (
           </i>
         </Text>
         <Text fontSize={[2, 4]} as="li" mb="3">
-          Understand the business case(s) and problems with the product
+          Understand the business case and problems with the Product team
         </Text>
         <Text fontSize={[2, 4]} as="li" mb="3">
           Assemble user journeys to create a seamless experience without
