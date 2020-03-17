@@ -1,24 +1,20 @@
 module.exports = {
+  siteMetadata: {
+    title: `I like Google fonts`,
+  },
   plugins: [
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: 'Ryan Coughlin',
-        short_name: 'Ryan Coughlin',
-        start_url: '/',
-        background_color: '#fff',
-        theme_color: '#ffd14e',
-        display: 'minimal-ui'
-      }
-    },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-glamor`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`oswald\:700`, `lora\:400`]
-      }
-    }
-  ]
+        fonts: [
+          `caladea`,
+          `bebas neue`,
+          `lora`,
+          `sen`,
+          `inter\:400, 400i,800,900`,
+        ],
+        display: "swap",
+      },
+    },
+  ],
 }
