@@ -71,7 +71,7 @@ const Introduction = () => (
         </Text>
       </Box>
       <Text fontSize={[2, 4]} mb={5}>
-        <em>Rinse, improve, and repeat.</em> The above are essential for Design leadership to bring to an organization and coach Designers to run with them.
+        <em>Rinse, improve, and repeat.</em>
       </Text>
       <Text fontSize={[2, 4]} fontWeight={"bold"} mb={3}>
         My name is Ryan Coughlin. I grew up in a small coastal town in Maine. Outside of work, I love to spend time on the water and outdoors.
