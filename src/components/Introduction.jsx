@@ -36,7 +36,7 @@ const Introduction = () => (
       <Text fontSize={[2, 4]} mb={3}>
         Design can deliver a great experience by:
       </Text>
-      <Box as="ul" ml={4}>
+      <Box as="ul" ml={2}>
         <Text fontSize={[2, 4]} as="li" mb="3">
           Conduct research to define high-value opportunities that can impact
           the business and product strategy
@@ -86,7 +86,7 @@ const Introduction = () => (
       <Text fontSize={[2, 4]} mb={3}>
         Within an average day, I:
       </Text>
-      <Box as="ul" ml={4}>
+      <Box as="ul" ml={2}>
         <Text fontSize={[2, 4]} as="li" mb="3">
           Provide clear and direct feedback to designers to foster career growth
       </Text>
