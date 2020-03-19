@@ -100,7 +100,7 @@ const Introduction = () => (
           Provide long term direction to leadership to help define company vision
         </Text>
         <Text fontSize={[2, 4]} as="li" mb="3">
-          Conduct research alongside Product and Engineering to build the right thing, at the right time
+          Conduct research alongside Product and Engineering <em>to build the right thing, at the right time</em>
         </Text>
         <Text fontSize={[2, 4]} as="li" mb="3">
           Ensure visual and experience design is consistent across product lines
