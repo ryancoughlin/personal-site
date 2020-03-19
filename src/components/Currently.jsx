@@ -7,12 +7,12 @@ const Currently = () => (
     sx={{
       py: 4,
       mt: 5,
-      backgroundColor: "plum",
+      backgroundColor: "primary",
     }}
   >
     <Box sx={{ maxWidth: 550, mx: "auto" }}>
       <Heading
-        color="muted"
+        color="black"
         fontSize={[6]}
         marginBottom={4}
         letterSpacing="0.050em"
@@ -21,40 +21,10 @@ const Currently = () => (
         <Link to="">Robin</Link>
       </Heading>
 
-      <Text color="muted" mb={3}>
-        My day-to-day consists of:
+      <Text fontSize={[5]} fontWeight={"bold"}>
+        Let's talk if the above sounds like something your organization needs.
       </Text>
-      <Box as="ul">
-        <Text as="li" color="muted" mb="3">
-          Enable and support the Design team to create solutions that hit
-          product goals.
-        </Text>
-        <Text as="li" color="muted" mb="3">
-          Create processes that bring Design, Product, and Engineers into the
-          design process.
-        </Text>
-        <Text as="li" color="muted" mb="3">
-          Enable Design to deliver on our narrative and strategy by
-          communicating
-        </Text>
-        <Text as="li" color="muted" mb="3">
-          Conduct research to alongside Product and Engineering to{" "}
-          <i>build the right thing, at the right time</i>
-        </Text>
-        <Text as="li" color="muted" mb="3">
-          Ensure visual and experience design is consistent across the platform
-        </Text>
-        <Text as="li" color="muted">
-          Build design systems alongside a team of engineers
-        </Text>
-        <Text as="li" color="muted" mb="3">
-          Facilitate design sprints with designers, engineers, and product
-          managrs. Uncover problems, create alignment, and deliver outcomes.
-        </Text>
-        <Text as="li" color="muted" mb="3">
-          Grow, mentor, and improve Design team.
-        </Text>
-      </Box>
+
     </Box>
   </Box>
 )
