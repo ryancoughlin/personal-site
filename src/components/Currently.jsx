@@ -7,22 +7,15 @@ const Currently = () => (
     sx={{
       py: 4,
       mt: 5,
-      backgroundColor: "primary",
+      backgroundColor: "plum",
     }}
   >
     <Box sx={{ maxWidth: 550, mx: "auto" }}>
-      <Heading
-        color="black"
-        fontSize={[6]}
-        marginBottom={4}
-        letterSpacing="0.050em"
-      >
-        I am currently building Workplace Experience Software at{" "}
-        <Link to="">Robin</Link>
-      </Heading>
-
-      <Text fontSize={[5]} fontWeight={"bold"}>
-        Let's talk if the above sounds like something your organization needs.
+      <Text fontSize={[2, 4]} color={"muted"} fontWeight={"bold"}>
+        <Link color={"muted"} href="https://dribbble.com/ryancoughlin">See snippets of work on Dribbble</Link>
+      </Text>
+      <Text fontSize={[4]} color={"muted"} fontWeight={"bold"}>
+        <Link href="mailto:ryan@ryancoughlin.com" color={"muted"}>Contact via email</Link>
       </Text>
 
     </Box>
