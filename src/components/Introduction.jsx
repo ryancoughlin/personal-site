@@ -36,7 +36,7 @@ const Introduction = () => (
       <Text fontSize={[2, 4]} mb={3}>
         Design can deliver a great experience by:
       </Text>
-      <Box as="ul">
+      <Box as="ul" ml={4}>
         <Text fontSize={[2, 4]} as="li" mb="3">
           Conduct research to define high-value opportunities that can impact
           the business and product strategy
@@ -70,20 +70,52 @@ const Introduction = () => (
           <strong>Align and rally the team.</strong>
         </Text>
       </Box>
-      <Text fontSize={[2, 4]} fontWeight="bold" mb={3}>
-        Rinse, improve, and repeat.
+      <Text fontSize={[2, 4]} mb={5}>
+        <em>Rinse, improve, and repeat.</em> The above are essential for Design leadership to bring to an organization and coach Designers to run with them.
       </Text>
-      <hr />
-      <Text fontSize={[2, 4]}>
-        My name is Ryan Coughlin, Design Lead at Robin. I figure out creative
-        and functional solutions that build innovative products.
+      <Text fontSize={[2, 4]} fontWeight={"bold"} mb={3}>
+        My name is Ryan Coughlin. I grew up in a small coastal town in Maine. Outside of work, I love to spend time on the water and outdoors.
       </Text>
+      <Text fontSize={[2, 4]} fontWeight={"bold"} mb={3}>
+        In my free time, I enjoy shooting photos, tying flies, and exploring new water.
+      </Text>
+
+      <Text fontSize={[2, 4]} mb={3}>
+        I am currently Design Team Lead at Robin, where I design software to deliver a great Workplace Experience.
+      </Text>
+      <Text fontSize={[2, 4]} mb={3}>
+        Within an average day, I:
+      </Text>
+      <Box as="ul" ml={4}>
+        <Text fontSize={[2, 4]} as="li" mb="3">
+          Provide clear and direct feedback to designers to foster career growth
+      </Text>
+        <Text fontSize={[2, 4]} as="li" mb="3">
+          Find opportunities to improve how Design interfaces with teams across the organization
+        </Text>
+        <Text fontSize={[2, 4]} as="li" mb="3">
+          Support design by breaking down large initiatives into bite-sized chunks
+        </Text>
+        <Text fontSize={[2, 4]} as="li" mb="3">
+          Provide long term direction to leadership to help define company vision
+        </Text>
+        <Text fontSize={[2, 4]} as="li" mb="3">
+          Conduct research alongside Product and Engineering to build the right thing, at the right time
+        </Text>
+        <Text fontSize={[2, 4]} as="li" mb="3">
+          Ensure visual and experience design is consistent across product lines
+        </Text>
+        <Text fontSize={[2, 4]} as="li" mb="3">
+          Build design systems alongside a team of engineers
+        </Text>
+        <Text fontSize={[2, 4]} as="li" mb="3">
+          Facilitate design sprints with Designers, Engineers, and Product. Uncover problems, create alignment, and deliver outcomes.
+        </Text>
+      </Box>
       <Text fontSize={[2, 4]}>
         You can see bits from current and past projects at <Link>Dribbble</Link>
       </Text>
-      <Text fontSize={[2, 4]}>
-        I am currently designing Workplace Experience software.
-      </Text>
+
     </Box>
   </Box>
 )
