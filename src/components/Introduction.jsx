@@ -22,7 +22,7 @@ const Introduction = () => (
         </Text>
       </Text>
       <Heading fontSize={[7, 9]} mb={4} letterSpacing="0.050em">
-        What makes a great digital product?
+        What makes great software?
       </Heading>
       <Text fontSize={[2, 4]} mb={3}>
         I've been working at that for the last 10 years.
@@ -112,10 +112,6 @@ const Introduction = () => (
           Facilitate design sprints with Designers, Engineers, and Product. Uncover problems, create alignment, and deliver outcomes.
         </Text>
       </Box>
-      <Text fontSize={[2, 4]}>
-        You can see bits from current and past projects at <Link>Dribbble</Link>
-      </Text>
-
     </Box>
   </Box>
 )
